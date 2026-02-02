@@ -26,7 +26,7 @@ int main() {
     int idx = 0;
 
     while (true) {
-        // ESSENCIAL: mantém o Wi-Fi ativo
+        // ESSENCIAL: mantém o Wi-Fi ativo, como o Led interno é ligado ao CHIP WI-FI, precisamos mantelo ativo, sem essa linha, não conseguiriamos controlalo
         cyw43_arch_poll();
 
         // Lê caractere do serial (não bloqueante)
